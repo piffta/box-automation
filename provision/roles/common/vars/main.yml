@@ -1,27 +1,53 @@
 common_packages:
-  - name: openntpd
-  - name: tmux
-  - name: git-core
-  - name: curl
-  - name: unp
-  - name: vim-nox
-  - name: wget
-  - name: htop
-  - name: i3
-  - name: python-pip
-  - name: slim
+  - name: acpi
+  - name: alsa-tools
+  - name: alsa-utils
+  - name: ardour
+  - name: bsd-mailx
+  - name: calf-plugins
   - name: chromium-browser
-  - name: mutt-patched
+  - name: curl
+  - name: dbus-x11
+  - name: drumgizmo
+  - name: elinks
+  - name: fish
   - name: geeqie
   - name: gimp
+  - name: git-core
+  - name: guitarix
+  - name: htop
+  - name: i3
   - name: inkscape
+  - name: invada-studio-plugins-lv2
+  - name: ladish
+  - name: laditools
+  - name: libnotify-bin
+  - name: lnav
   - name: mplayer
-  - name: smplayer
-  - name: skype
   - name: mumble
-  - name: ardour
-  - name: drumgizmo
-  - name: fish
-  - name: acpi
+  - name: mutt-patched
+  - name: ncmpcpp
+  - name: offlineimap
+  - name: openntpd
+  - name: pepperflashplugin-nonfree
+  - name: pulseaudio-module-jack
+  - name: python-pip
+  - name: python-virtualenv
+  - name: python3-alsaaudio
+  - name: python3-pip
+  - name: skype
+  - name: slim
+  - name: slock
+  - name: smplayer
+  - name: task
+  - name: tmux
+  - name: turses
+  - name: unclutter
+  - name: unp
   - name: vagrant
+  - name: vim-nox
   - name: virtualbox
+  - name: weechat
+  - name: weechat-scripts
+  - name: wget
+  - name: xautolock
