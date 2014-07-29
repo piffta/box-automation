@@ -3,8 +3,16 @@
   apt:
     update_cache: yes
 
-- name: install pycurl
+- name: install packages
   sudo: yes
+  with_items: pretask_packages
   apt:
-    pkg: python-pycurl
+    pkg: "{{ item.name }}"
     state: latest
+
+- name: add repositories
+  sudo: yes
+  with_items: repositories
+  apt_repository:
+    repo: "{{ item.name }}"
+    state: absent

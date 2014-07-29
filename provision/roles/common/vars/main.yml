@@ -1,3 +1,12 @@
+repositories:
+  - name: ppa:ansible/ansible
+  - name: ppa:fish-shell/release-2
+  - name: ppa:kxstudio-debian/kxstudio
+
+pretask_packages:
+  - name: python-apt
+  - name: python-pycurl
+
 common_packages:
   - name: acpi
   - name: alsa-tools
@@ -33,11 +42,10 @@ common_packages:
   - name: pulseaudio-module-jack
   - name: python-pip
   - name: python-virtualenv
-  - name: python3-alsaaudio
   - name: python3-pip
   - name: skype
   - name: slim
-  - name: slock
+  - name: suckless-tools
   - name: smplayer
   - name: task
   - name: tmux
