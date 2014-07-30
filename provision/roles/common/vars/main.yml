@@ -3,9 +3,13 @@ repositories:
   - name: ppa:fish-shell/release-2
   - name: ppa:kxstudio-debian/kxstudio
 
+repository_packages:
+  - name: kxstudio-repos
+
 pretask_packages:
   - name: python-apt
   - name: python-pycurl
+  - name: software-properties-common
 
 common_packages:
   - name: acpi

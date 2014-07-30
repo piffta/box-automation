@@ -8,6 +8,13 @@
   apt:
     upgrade: dist
 
+- name: install repository packages
+  sudo: yes
+  with_items: repository_packages
+  apt:
+    pkg: "{{ item.name }}"
+    state: latest
+
 - name: install packages
   sudo: yes
   with_items: common_packages

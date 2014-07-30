@@ -13,6 +13,4 @@
 - name: add repositories
   sudo: yes
   with_items: repositories
-  apt_repository:
-    repo: "{{ item.name }}"
-    state: absent
+  command: add-apt-repository -y "{{ item.name }}"
