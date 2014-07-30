@@ -1,4 +1,0 @@
-# -*- mode: ansible -*-
-# vi: set ft=ansible :
-
-webapp_user: "vagrant"

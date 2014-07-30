@@ -10,6 +10,10 @@
     pkg: "{{ item.name }}"
     state: latest
 
+- name: add i386 architecture
+  sudo: yes
+  command: dpkg --add-architecture i386
+
 - name: add repositories
   sudo: yes
   with_items: repositories
