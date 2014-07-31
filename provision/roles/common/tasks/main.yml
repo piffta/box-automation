@@ -3,17 +3,22 @@
   apt:
     update_cache: yes
 
-- name: update all packages to the latest version
-  sudo: yes
-  apt:
-    upgrade: dist
-
 - name: install repository packages
   sudo: yes
   with_items: repository_packages
   apt:
     pkg: "{{ item.name }}"
     state: latest
+
+- name: update apt
+  sudo: yes
+  apt:
+    update_cache: yes
+
+- name: update all packages to the latest version
+  sudo: yes
+  apt:
+    upgrade: dist
 
 - name: install packages
   sudo: yes

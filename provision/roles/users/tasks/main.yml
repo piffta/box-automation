@@ -1,0 +1,5 @@
+- name: add users
+  sudo: yes
+  with_items: users
+  user:
+    name: "{{ item.name }}"

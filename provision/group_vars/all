@@ -57,4 +57,5 @@ common_packages:
   - name: weechat
   - name: weechat-scripts
   - name: wget
+  - name: wireshark
   - name: xautolock
