@@ -1,7 +1,12 @@
-repositories:
+ppa_repositories:
   - name: ppa:ansible/ansible
+    creates: ansible-ansible-trusty.list
   - name: ppa:fish-shell/release-2
+    creates: fish-shell-release-2-trusty.list
   - name: ppa:kxstudio-debian/kxstudio
+    creates: kxstudio-debian.list
+
+deb_repositories:
   - name: deb http://archive.canonical.com/ trusty partner
 
 repository_packages:

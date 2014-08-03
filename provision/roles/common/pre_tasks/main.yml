@@ -2,6 +2,15 @@
   sudo: yes
   apt:
     update_cache: yes
+    cache_valid_time: 3600
+
+- name: disable suggested and recommended packages
+  sudo: yes
+  copy:
+    src: apt.conf
+    dest: /etc/apt/apt.conf
+    owner: root
+    group: root
 
 - name: install packages
   sudo: yes
@@ -14,7 +23,14 @@
   sudo: yes
   command: dpkg --add-architecture i386
 
-- name: add repositories
+- name: add ppa repositories
   sudo: yes
-  with_items: repositories
-  command: add-apt-repository -y "{{ item.name }}"
+  with_items: ppa_repositories
+  command: add-apt-repository -y "{{ item.name }}" creates="/etc/apt/sources.list.d/{{ item.creates }}"
+
+- name: add deb repositories
+  sudo: yes
+  with_items: deb_repositories
+  apt_repository:
+    repo: "{{ item.name }}"
+    state: present

@@ -27,6 +27,7 @@ common_packages:
   - name: invada-studio-plugins-lv2
   - name: ladish
   - name: laditools
+  - name: libiw-dev
   - name: libnotify-bin
   - name: libreoffice
   - name: lnav
@@ -44,6 +45,7 @@ common_packages:
   - name: skype
   - name: slim
   - name: suckless-tools
+  - name: syslog-ng
   - name: smplayer
   - name: task
   - name: tmux
@@ -59,3 +61,8 @@ common_packages:
   - name: wget
   - name: wireshark
   - name: xautolock
+
+pip3_packages:
+  - name: basiciw
+  - name: i3pystatus
+  - name: netifaces

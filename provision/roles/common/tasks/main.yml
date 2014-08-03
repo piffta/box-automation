@@ -33,3 +33,11 @@
     name: openntpd
     enabled: yes
     state: restarted
+
+- name: install pip3 packages
+  sudo: yes
+  with_items: pip3_packages
+  pip:
+    executable: pip3
+    name: "{{ item.name }}"
+    state: latest
