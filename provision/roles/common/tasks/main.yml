@@ -41,3 +41,14 @@
     executable: pip3
     name: "{{ item.name }}"
     state: latest
+
+- name: configure grub
+  sudo: yes
+  copy:
+    src: grub
+    dest: /etc/default/grub
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - update grub

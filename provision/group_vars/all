@@ -10,12 +10,15 @@ common_packages:
   - name: alsa-utils
   - name: ardour
   - name: bsd-mailx
+  - name: cadence
   - name: calf-plugins
   - name: chromium-browser
+  - name: claudia
   - name: curl
   - name: dbus-x11
   - name: drumgizmo
   - name: elinks
+  - name: evince
   - name: fish
   - name: geeqie
   - name: gimp
@@ -45,7 +48,7 @@ common_packages:
   - name: skype
   - name: slim
   - name: suckless-tools
-  - name: syslog-ng
+  - name: syslog-ng-core
   - name: smplayer
   - name: task
   - name: tmux
