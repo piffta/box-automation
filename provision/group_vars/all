@@ -6,6 +6,7 @@ users:
 
 common_packages:
   - name: acpi
+  - name: adobe-flashplugin
   - name: alsa-tools
   - name: alsa-utils
   - name: ardour
@@ -33,7 +34,9 @@ common_packages:
   - name: libiw-dev
   - name: libnotify-bin
   - name: libreoffice
+  - name: lmms
   - name: lnav
+  - name: mpd
   - name: mplayer
   - name: mumble
   - name: mutt-patched
@@ -45,6 +48,7 @@ common_packages:
   - name: python-pip
   - name: python-virtualenv
   - name: python3-pip
+  - name: rxvt-unicode-256color
   - name: skype
   - name: slim
   - name: suckless-tools
@@ -64,6 +68,7 @@ common_packages:
   - name: wget
   - name: wireshark
   - name: xautolock
+  - name: xserver-xorg
 
 pip3_packages:
   - name: basiciw

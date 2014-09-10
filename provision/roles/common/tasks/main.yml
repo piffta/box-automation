@@ -52,3 +52,20 @@
     mode: 0644
   notify:
     - update grub
+
+- name: configure slim
+  sudo: yes
+  template:
+    src: slim.conf.j2
+    dest: /etc/slim.conf
+    owner: root
+    group: root
+  notify:
+    - restart slim
+
+- name: enable slim
+  sudo: yes
+  service:
+    name: slim
+    enabled: yes
+    state: started

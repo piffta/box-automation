@@ -2,3 +2,9 @@
   sudo: yes
   command: update-grub
 
+- name: restart slim
+  sudo: yes
+  service:
+    name: slim
+    enabled: yes
+    state: restarted

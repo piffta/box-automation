@@ -3,3 +3,4 @@
   with_items: users
   user:
     name: "{{ item.name }}"
+    shell: "/usr/bin/fish"
