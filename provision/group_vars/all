@@ -9,7 +9,7 @@ common_packages:
   - name: adobe-flashplugin
   - name: alsa-tools
   - name: alsa-utils
-  - name: ardour
+  - name: ardour3
   - name: bsd-mailx
   - name: cadence
   - name: calf-plugins

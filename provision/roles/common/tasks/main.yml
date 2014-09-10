@@ -69,3 +69,11 @@
     name: slim
     enabled: yes
     state: started
+
+- name: make chromium work in incognito
+  sudo: yes
+  template:
+    src: default.j2
+    dest: /etc/chromium-browser/default
+    owner: root
+    group: root
