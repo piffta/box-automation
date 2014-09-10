@@ -8,7 +8,9 @@ common_packages:
   - name: acpi
   - name: adobe-flashplugin
   - name: alsa-tools
+  - name: alsa-tools-gui
   - name: alsa-utils
+  - name: apt-file
   - name: ardour3
   - name: bsd-mailx
   - name: cadence

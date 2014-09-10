@@ -77,3 +77,7 @@
     dest: /etc/chromium-browser/default
     owner: root
     group: root
+
+- name: update apt-file
+  sudo: yes
+  command: apt-file update
