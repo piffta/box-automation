@@ -8,3 +8,11 @@
     name: slim
     enabled: yes
     state: restarted
+
+- name: restart openntpd
+  sudo: yes
+  service:
+    name: openntpd
+    enabled: yes
+    state: restarted
+

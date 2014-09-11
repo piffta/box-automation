@@ -26,13 +26,8 @@
   apt:
     pkg: "{{ item.name }}"
     state: latest
-
-- name: restart openntpd
-  sudo: yes
-  service:
-    name: openntpd
-    enabled: yes
-    state: restarted
+  notify:
+    - restart openntpd
 
 - name: install pip3 packages
   sudo: yes

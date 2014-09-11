@@ -1,0 +1,5 @@
+- name: install xbmc
+  sudo: yes
+  apt:
+    pkg: xbmc
+    state: latest
