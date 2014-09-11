@@ -1,9 +1,6 @@
 # -*- mode: ansible -*-
 # vi: set ft=ansible :
 
-users:
-  - name: meka
-
 common_packages:
   - name: acpi
   - name: adobe-flashplugin

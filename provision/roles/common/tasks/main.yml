@@ -81,3 +81,10 @@
 - name: update apt-file
   sudo: yes
   command: apt-file update
+
+- name: disable system wide mpd
+  sudo: yes
+  service:
+    name: mpd
+    enabled: no
+    state: stopped

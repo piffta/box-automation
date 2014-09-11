@@ -1,6 +1,14 @@
 - name: add users
   sudo: yes
-  with_items: users
   user:
-    name: "{{ item.name }}"
+    name: "meka"
     shell: "/usr/bin/fish"
+
+- name: configure cron for meka
+  sudo: yes
+  sudo_user: meka
+  cron:
+    name: run ~/bin stuf
+    state: present
+    job: ~/bin/cron.sh
+    minute: "*/3"
