@@ -9,6 +9,7 @@ common_packages:
   - name: alsa-utils
   - name: apt-file
   - name: ardour3
+  - name: autoconf
   - name: bsd-mailx
   - name: cadence
   - name: calf-plugins
@@ -32,7 +33,10 @@ common_packages:
   - name: laditools
   - name: libiw-dev
   - name: libnotify-bin
+  - name: libpangox-1.0-dev
   - name: libreoffice
+  - name: libxft-dev
+  - name: libxinerama-dev
   - name: lmms
   - name: lnav
   - name: mpd
@@ -43,6 +47,7 @@ common_packages:
   - name: offlineimap
   - name: openntpd
   - name: pepperflashplugin-nonfree
+  - name: pkg-config
   - name: pulseaudio-module-jack
   - name: python-pip
   - name: python-virtualenv
