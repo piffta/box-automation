@@ -55,6 +55,7 @@ common_packages:
   - name: rxvt-unicode-256color
   - name: skype
   - name: slim
+  - name: sox
   - name: suckless-tools
   - name: syslog-ng-core
   - name: smplayer
