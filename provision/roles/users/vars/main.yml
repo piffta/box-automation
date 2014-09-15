@@ -1,2 +1,3 @@
 user_pip_packages:
   - name: bugwarrior
+  - name: jira
