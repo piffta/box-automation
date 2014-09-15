@@ -12,3 +12,16 @@
     state: present
     job: ~/bin/cron.sh
     minute: "*/3"
+
+- name: install vex
+  pip:
+    name: vex
+    extra_args: "--user"
+    state: present
+
+- name: install user pip packages
+  with_items: user_pip_packages
+  pip:
+    name: "{{ item.name }}"
+    virtualenv: "~/.virtualenvs/v"
+    state: present

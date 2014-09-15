@@ -54,6 +54,7 @@ common_packages:
   - name: python-xdg
   - name: python3-pip
   - name: rxvt-unicode-256color
+  - name: silversearcher-ag
   - name: skype
   - name: slim
   - name: sox
