@@ -51,6 +51,7 @@ common_packages:
   - name: pulseaudio-module-jack
   - name: python-pip
   - name: python-virtualenv
+  - name: python-xdg
   - name: python3-pip
   - name: rxvt-unicode-256color
   - name: skype
