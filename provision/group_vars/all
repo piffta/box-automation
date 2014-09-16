@@ -67,7 +67,7 @@ common_packages:
   - name: unclutter
   - name: unp
   - name: vagrant
-  - name: vim-nox
+  - name: vim-gtk
   - name: virtualbox
   - name: wajig
   - name: weechat
