@@ -78,6 +78,7 @@ common_packages:
   - name: wireshark
   - name: xautolock
   - name: xbmc
+  - name: xdotool
   - name: xserver-xorg
 
 pip3_packages:
