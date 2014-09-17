@@ -25,6 +25,7 @@ common_packages:
   - name: geeqie
   - name: gimp
   - name: git-core
+  - name: gpm
   - name: guitarix
   - name: htop
   - name: i3
