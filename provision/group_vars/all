@@ -8,6 +8,7 @@ common_packages:
   - name: alsa-tools-gui
   - name: alsa-utils
   - name: apt-file
+  - name: arandr
   - name: ardour3
   - name: autoconf
   - name: bsd-mailx
