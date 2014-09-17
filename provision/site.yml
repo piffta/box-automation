@@ -1,12 +1,6 @@
-- hosts: thinker
+- hosts: all
   pre_tasks:
     - include: roles/common/pre_tasks/main.yml
   roles:
     - common
     - users
-
-- hosts: hal9000
-  pre_tasks:
-    - include: roles/common/pre_tasks/main.yml
-  roles:
-    - hal9000
