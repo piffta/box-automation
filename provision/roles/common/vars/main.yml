@@ -8,9 +8,11 @@ ppa_repositories:
 
 deb_repositories:
   - name: deb http://archive.canonical.com/ trusty partner
+  - name: deb http://debian.sur5r.net/i3/ trusty universe
 
 repository_packages:
   - name: kxstudio-repos
+  - name: sur5r-keyring
 
 pretask_packages:
   - name: python-apt

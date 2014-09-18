@@ -8,6 +8,7 @@
   with_items: repository_packages
   apt:
     pkg: "{{ item.name }}"
+    dpkg_options: '--allow-unauthenticated'
     state: latest
 
 - name: update apt
