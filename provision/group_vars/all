@@ -11,6 +11,7 @@ common_packages:
   - name: arandr
   - name: ardour3
   - name: autoconf
+  - name: awesome
   - name: bsd-mailx
   - name: cadence
   - name: calf-plugins
@@ -79,6 +80,7 @@ common_packages:
   - name: xautolock
   - name: xbmc
   - name: xdotool
+  - name: xinit
   - name: xserver-xorg
 
 pip3_packages:

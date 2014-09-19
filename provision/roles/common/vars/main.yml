@@ -5,6 +5,8 @@ ppa_repositories:
     creates: fish-shell-release-2-trusty.list
   - name: ppa:kxstudio-debian/kxstudio
     creates: kxstudio-debian.list
+  - name: ppa:klaus-vormweg/ppa
+    creates: klaus-vormweg-ppa-trusty.list
 
 deb_repositories:
   - name: deb http://archive.canonical.com/ trusty partner
