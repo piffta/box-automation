@@ -56,6 +56,7 @@ common_packages:
   - name: python-virtualenv
   - name: python-xdg
   - name: python3-pip
+  - name: rtorrent
   - name: rxvt-unicode-256color
   - name: silversearcher-ag
   - name: skype
