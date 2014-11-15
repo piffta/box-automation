@@ -35,6 +35,7 @@ common_packages:
   - name: i3
   - name: inkscape
   - name: invada-studio-plugins-lv2
+  - name: iptables
   - name: ladish
   - name: laditools
   - name: libiw-dev
