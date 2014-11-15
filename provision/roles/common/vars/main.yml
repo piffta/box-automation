@@ -11,6 +11,7 @@ ppa_repositories:
 deb_repositories:
   - name: deb http://archive.canonical.com/ trusty partner
   - name: deb http://debian.sur5r.net/i3/ trusty universe
+  - name: deb https://get.docker.com/ubuntu docker main
 
 repository_packages:
   - name: kxstudio-repos

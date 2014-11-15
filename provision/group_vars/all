@@ -15,9 +15,11 @@ common_packages:
   - name: bsd-mailx
   - name: cadence
   - name: calf-plugins
+  - name: carla
   - name: chromium-browser
   - name: claudia
   - name: curl
+  - name: libcurl4-gnutls-dev
   - name: dbus-x11
   - name: drumgizmo
   - name: elinks
@@ -28,6 +30,7 @@ common_packages:
   - name: git-core
   - name: gpm
   - name: guitarix
+  - name: hplip
   - name: htop
   - name: i3
   - name: inkscape
@@ -44,6 +47,7 @@ common_packages:
   - name: lnav
   - name: mpd
   - name: mplayer
+  - name: mpv
   - name: mumble
   - name: mutt-patched
   - name: ncmpcpp
@@ -52,6 +56,7 @@ common_packages:
   - name: pepperflashplugin-nonfree
   - name: pkg-config
   - name: pulseaudio-module-jack
+  - name: pv
   - name: python-pip
   - name: python-virtualenv
   - name: python-xdg
@@ -64,6 +69,7 @@ common_packages:
   - name: sox
   - name: suckless-tools
   - name: syslog-ng-core
+  - name: sysstat
   - name: smplayer
   - name: task
   - name: tmux
