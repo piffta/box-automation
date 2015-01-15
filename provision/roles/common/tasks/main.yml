@@ -2,14 +2,15 @@
   sudo: yes
   apt:
     update_cache: yes
+    cache_valid_time: 3600
 
 - name: install repository packages
   sudo: yes
   with_items: repository_packages
   apt:
     pkg: "{{ item.name }}"
-    dpkg_options: 'allow-unauthenticated'
     state: latest
+    force: yes
 
 - name: update apt
   sudo: yes

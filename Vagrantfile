@@ -11,4 +11,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.playbook = "provision/site.yml"
     ansible.host_key_checking = false
   end
+
+  config.vm.provider "virtualbox" do |v|
+    v.gui = true
+  end
 end

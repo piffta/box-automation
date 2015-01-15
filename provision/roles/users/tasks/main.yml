@@ -2,10 +2,4 @@
   sudo: yes
   user:
     name: "mladen"
-    shell: "/zsh"
-
-- name: install user pip packages
-  with_items: user_pip_packages
-  pip:
-    name: "{{ item.name }}"
-    state: present
+    shell: "/bin/zsh"
