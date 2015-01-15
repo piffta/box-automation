@@ -49,31 +49,6 @@
   notify:
     - update grub
 
-- name: configure slim
-  sudo: yes
-  template:
-    src: slim.conf.j2
-    dest: /etc/slim.conf
-    owner: root
-    group: root
-  notify:
-    - restart slim
-
-- name: enable slim
-  sudo: yes
-  service:
-    name: slim
-    enabled: yes
-    state: started
-
-- name: make chromium work in incognito
-  sudo: yes
-  template:
-    src: default.j2
-    dest: /etc/chromium-browser/default
-    owner: root
-    group: root
-
 - name: update apt-file
   sudo: yes
   command: apt-file update
