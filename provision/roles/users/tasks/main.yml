@@ -2,4 +2,32 @@
   sudo: yes
   user:
     name: "mladen"
-    shell: "/bin/zsh"
+
+- name: copy dotfiles
+  with_items: dotfiles
+  sudo: yes
+  copy:
+    src: "{{ item.name }}"
+    dest: /home/mladen/.{{ item.name }}
+    owner: mladen
+    group: mladen
+    mode: 755
+
+- name: ensure i3 config has it's own folder
+  sudo: yes
+  file:
+    path: /home/mladen/.i3/
+    owner: mladen
+    group: mladen
+    state: directory
+    mode: 755
+
+- name: copy i3 config
+  sudo: yes
+  copy:
+    src: i3.config
+    owner: mladen
+    group: mladen
+    mode: 755
+    dest: /home/mladen/.i3/config
+

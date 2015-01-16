@@ -1,3 +1,11 @@
 user_pip_packages:
   - name: bugwarrior
   - name: jira
+
+dotfiles:
+  - name: gitconfig
+  - name: i3.config
+  - name: vimrc
+  - name: xmodmap
+  - name: xprofile
+  - name: xdefaults

@@ -50,9 +50,9 @@
   notify:
     - update grub
 
-- name: update apt-file
-  sudo: yes
-  command: apt-file update
+#- name: update apt-file
+#  sudo: yes
+#  command: apt-file update
 
 - name: disable system wide mpd
   sudo: yes

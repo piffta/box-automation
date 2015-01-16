@@ -1,0 +1,7 @@
+
+setxkbmap -option "grp:lswitch" "us,hr" &
+
+urxvt &
+
+xmodmap /home/mladen/.Xmodmap
+xrdb /home/mladen/.Xdefaults

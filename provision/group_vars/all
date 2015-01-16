@@ -70,6 +70,7 @@ common_packages:
   - name: xdotool
   - name: xinit
   - name: xserver-xorg
+  - name: zsh
 
 pip3_packages:
   - name: basiciw
