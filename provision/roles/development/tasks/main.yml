@@ -1,0 +1,11 @@
+- name: Oracle JDK 8 - accept license
+  sudo: true
+  action: shell echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+
+- name: Oracle JDK 8 - install
+  sudo: yes
+  with_items: development_packages
+  apt:
+    pkg: "{{ item.name }}"
+    state: latest
+    install_recommends: yes

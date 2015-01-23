@@ -3,8 +3,6 @@ ppa_repositories:
     creates: ansible-ansible-trusty.list
   - name: ppa:fish-shell/release-2
     creates: fish-shell-release-2-trusty.list
-  - name: ppa:kxstudio-debian/kxstudio
-    creates: kxstudio-debian.list
   - name: ppa:klaus-vormweg/ppa
     creates: klaus-vormweg-ppa-trusty.list
 
@@ -14,7 +12,6 @@ deb_repositories:
   - name: deb https://get.docker.com/ubuntu docker main
 
 repository_packages:
-  - name: kxstudio-repos
   - name: sur5r-keyring
 
 pretask_packages:

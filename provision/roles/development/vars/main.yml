@@ -1,0 +1,8 @@
+development_packages:
+  - name: oracle-java8-installer
+  - name: oracle-java8-set-default
+
+ppa_repositories:
+  - name: ppa:webupd8team/java
+    creates: oracle-java8-installer.list
+
