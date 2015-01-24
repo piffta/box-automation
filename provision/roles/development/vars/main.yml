@@ -1,6 +1,9 @@
 development_packages:
-  - name: oracle-java8-installer
-  - name: oracle-java8-set-default
+  - name: oracle-java7-installer
+  - name: oracle-java7-set-default
+  - name: mysql-server
+  - name: mysql-workbench
+  - name: kdiff3
 
 ppa_repositories:
   - name: ppa:webupd8team/java
