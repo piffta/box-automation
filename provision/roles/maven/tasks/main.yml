@@ -14,7 +14,7 @@
   sudo: yes
   file:
     state=directory
-    dest={{ remote_ansible_data_path }}
+    dest={{ data_path }}
 
 - name: Install Maven installation directory
   tags: maven
@@ -31,7 +31,7 @@
   tags: maven
   sudo: yes
   unarchive:
-    src={{ remote_ansible_data_path }}/{{ maven_filename }}
+    src={{ data_path }}/{{ maven_filename }}
     dest={{ maven_install_dir }}
     copy=false
     creates={{ maven_install_dir }}/apache-maven-{{ maven_version }}

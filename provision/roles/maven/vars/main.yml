@@ -1,8 +1,7 @@
 maven_version: 3.2.5
 
 # path for ansible to store downloaded or templated data
-local_ansible_data_path: '/data/tools'
-remote_ansible_data_path: "{{ local_ansible_data_path }}"
+data_path: '/data/tools'
 
 # Maven settings
 maven_filename: "apache-maven-{{ maven_version }}-bin.tar.gz"
