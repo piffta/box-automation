@@ -1,11 +1,10 @@
+maven_version: 3.2.5
+
 # path for ansible to store downloaded or templated data
-local_ansible_data_path: '/usr/local/src/ansible/data'
+local_ansible_data_path: '/data/tools'
 remote_ansible_data_path: "{{ local_ansible_data_path }}"
 
 # Maven settings
-maven_mirror: 'http://mirrors.ibiblio.org/apache/maven/maven-3/3.2.5/binaries'
-maven_version: '3.2.5'
-maven_checksum: 'b2d88f02bd3a08a9df1f0b0126ebd8dc'
 maven_filename: "apache-maven-{{ maven_version }}-bin.tar.gz"
 maven_bin_path: '/usr/local/bin'
 
