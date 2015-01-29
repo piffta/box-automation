@@ -1,0 +1,15 @@
+- name: Install local ansible data install path directory
+  tags: sts
+  sudo: yes
+  file:
+    state=directory
+    mode=2777
+    dest={{ data_path }}
+
+- name: Download STS
+  tags: sts
+  sudo: no
+  get_url:
+    dest={{ data_path }}/{{ sts_filename }}
+    url={{ sts_url }}/{{ sts_filename }}
+    mode=0644

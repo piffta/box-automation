@@ -1,0 +1,6 @@
+data_path: '/data/install'
+
+sts_version: 3.6.3.SR1
+sts_filename: spring-tool-suite-{{ sts_version }}-e4.4.1-linux-gtk-x86_64.tar.gz
+sts_install_dir: '/opt/{{ sts_version }}'
+

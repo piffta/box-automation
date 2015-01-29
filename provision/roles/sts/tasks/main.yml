@@ -1,0 +1,42 @@
+- name: Load version vars
+  tags: sts
+  with_first_found:
+    - ../vars/versions/{{ sts_version }}.yml
+  include_vars: "{{ item }}"
+
+- include: local.yml
+  tags: sts
+
+- name: Install remote ansible STS data path directory
+  tags: sts
+  sudo: yes
+  file:
+    state=directory
+    dest={{ data_path }}
+
+- name: Install STS installation directory
+  tags: sts
+  sudo: yes
+  file:
+    state=directory
+    owner=0
+    group=0
+    mode=0755
+    dest={{ sts_install_dir }}
+
+
+- name: Unarchive STS
+  tags: sts
+  sudo: yes
+  unarchive:
+    src={{ data_path }}/{{ sts_filename }}
+    dest={{ data_path }}
+    copy=false
+    creates="{{data_path}}/sts-bundle"
+
+# - name: Copy STS to install dir
+#  tags: sts
+#  sudo: yes
+#  copy:
+#    src: "{{ data_path }}/sts-bundle/sts-{{ sts_version }}"
+#    dest: "{{ sts_install_dir }}"
