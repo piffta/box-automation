@@ -37,7 +37,6 @@ common_packages:
   - name: ncmpcpp
   - name: offlineimap
   - name: openntpd
-  - name: pepperflashplugin-nonfree
   - name: pkg-config
   - name: pv
   - name: python-pip
@@ -59,7 +58,6 @@ common_packages:
   - name: unp
   - name: vagrant
   - name: vim-gtk
-  - name: virtualbox
   - name: wajig
   - name: weechat
   - name: weechat-scripts

@@ -6,13 +6,13 @@ CHROMIUM_FLAGS="--incognito"
 
 # part for pepperflashplugin-nonfree : begin
 
-flashso="/usr/lib/pepperflashplugin-nonfree/libpepflashplayer.so"
+# flashso="/usr/lib/pepperflashplugin-nonfree/libpepflashplayer.so"
 
-if [ -f $flashso ]
-then
-        flashversion=`strings $flashso|grep ^LNX|sed -e "s/^LNX //"|sed -e "s/,/./g"`
-        CHROMIUM_FLAGS="$CHROMIUM_FLAGS --ppapi-flash-path=$flashso --ppapi-flash-version=$flashversion"
-fi
+# if [ -f $flashso ]
+# then
+#        flashversion=`strings $flashso|grep ^LNX|sed -e "s/^LNX //"|sed -e "s/,/./g"`
+#        CHROMIUM_FLAGS="$CHROMIUM_FLAGS --ppapi-flash-path=$flashso --ppapi-flash-version=$flashversion"
+# fi
 
 # part for pepperflashplugin-nonfree : end
 
